@@ -1,14 +1,8 @@
 <html>
 <head>
     <title>Bettercode Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="Mobirise v2.6.1, mobirise.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/images/discover-mobile-350x350-16.png" type="image/x-icon">
-    <meta name="description" content="">
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto:700,400&amp;subset=cyrillic,latin,greek,vietnamese">
@@ -21,6 +15,25 @@
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
     <link rel="stylesheet" href="assets/custom.css" type="text/css">
 
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) {
+            console.error(err);
+        });
+    </script>
+
+    <!-- 3. Load our 'modules' -->
+    <script src='app/app.component.ts'></script>
+    <script src='app/main.ts'></script>
+
 </head>
 
 <!-- 3. Display the application -->
@@ -28,21 +41,18 @@
 
 <my-app></my-app>
 
-<!-- 1. Load libraries -->
-<!-- IE required polyfill -->
-<script src="node_modules/core-js/client/shim.min.js"></script>
-<script src="node_modules/zone.js/dist/zone.js"></script>
-<script src="node_modules/reflect-metadata/Reflect.js"></script>
-<script src="node_modules/rxjs/bundles/Rx.umd.js"></script>
-<script src="node_modules/@angular/core/bundles/core.umd.js"></script>
-<script src="node_modules/@angular/common/bundles/common.umd.js"></script>
-<script src="node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
-<script src="node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
-<script src="node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
-
-<!-- 2. Load our 'modules' -->
-<script src='app/app.component.js'></script>
-<script src='app/main.js'></script>
+<!--0. mobirise -->
+<script src="assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="assets/smooth-scroll/SmoothScroll.js"></script>
+<script src="assets/jarallax/jarallax.js"></script>
+<script src="assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
+<script src="assets/masonry/masonry.pkgd.min.js"></script>
+<script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/social-likes/social-likes.js"></script>
+<script src="assets/mobirise/js/script.js"></script>
+<script src="assets/mobirise-gallery/script.js"></script>
 
 </body>
 </html>
