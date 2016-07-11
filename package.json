@@ -2,7 +2,7 @@
   "name": "bettercode-home",
   "version": "1.0.0",
   "scripts": {
-    "start": "bettercode homepage",
+    "start": "npm run lite",
     "lite": "lite-server"
   },
   "license": "bettercode",
