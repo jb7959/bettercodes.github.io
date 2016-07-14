@@ -19,21 +19,26 @@
 }
 
 @media screen and (max-width: 1025px) and (min-width: 766px) {
+
     .mbr-hero__text {
         padding-top: 70px;
     }
 
-    .bettercode_map {
-        width: 10%;
-    }
 }
 
 @media screen and (max-width: 765px) and (min-width: 0px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .mbr-hero__text {
         padding-top: 70px;
     }
 
-    .bettercode_map {
-        width: 10%;
+    .bettercode_team {
+        padding-top: 50px;
     }
+
 }
