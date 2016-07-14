@@ -1,25 +1,27 @@
-<section class="content-2 col-sm-12 col-xs-12" id="team" style="background-color: rgb(239, 239, 239);">
+<section class="content-2 col-sm-12 col-xs-12" id="team">
     <div class="container">
         <div class="row">
-            <div class="col-sm-5 col-xs-12">
+            <div class="col-sm-6 col-xs-12" style="opacity: 0.7; background-color: rgb(0, 0, 0);">
                 <div class="thumbnail">
                     <div class="caption">
-                        <h3>Management Team</h3>
+                        <h3 class="text-white">Management Team</h3>
                         <div *ngFor="let member of managements">
-                            <p [innerHTML]="member.name"></p>
-                            <p [innerHTML]="member.explanation"></p><br>
+                            <p style="color: white" [innerHTML]="member.name"></p>
+                            <p style="color: white" [innerHTML]="member.explanation"></p><br>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-offset-3 col-sm-4 col-xs-12">
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12" style="opacity: 0.7; background-color: rgb(0, 0, 0);">
                 <div class="thumbnail">
                     <div class="caption">
-                        <h3>Advisory Team</h3>
+                        <h3 class="text-white">Advisory Team</h3>
                         <div>
                             <div *ngFor="let member of advisories">
-                                <p [innerHTML]="member.name"></p>
-                                <p [innerHTML]="member.explanation"></p><br>
+                                <p style="color: white" [innerHTML]="member.name"></p>
+                                <p style="color: white" [innerHTML]="member.explanation"></p><br>
                             </div>
                         </div>
                     </div>

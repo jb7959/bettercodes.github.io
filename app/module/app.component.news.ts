@@ -2,9 +2,11 @@
  * Created by donghoon on 2016. 7. 11..
  */
 import {Component} from '@angular/core';
+import {TeamComponent} from './app.component.team'
 
 @Component({
     selector: "news",
+    directives: [TeamComponent],
     templateUrl: "app/module/news.html"
 })
 export class NewsComponent {
