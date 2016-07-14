@@ -13,3 +13,13 @@
     -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
     -webkit-animation-duration: 1s;
 }
+
+@media screen and (max-width: 765px) and (min-width: 0px) {
+    .mbr-hero__text {
+        padding-top: 70px;
+    }
+
+    .bettercode_map {
+        width: 10%;
+    }
+}

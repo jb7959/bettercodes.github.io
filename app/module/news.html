@@ -7,21 +7,20 @@
             <div class="mbr-box mbr-box--stretched">
                 <div class="mbr-box__magnet mbr-box__magnet--center-left">
                     <div class="row">
-                        <div class="col-sm-offset-8 col-sm-6">
-                            <div class="mbr-hero animated fadeInUp">
-                                <h1 class="mbr-hero__text">News</h1><br>
+                        <div class="col-sm-8 col-xs-12">
+                            <h1 class="mbr-hero__text text-warning">Sino-Korea Cross-Border <br>IT Consulting</h1>
+                            <br><br><br>
+                            <div class="mbr-hero animated fadeInUp" *ngFor="let intro of introduces">
                                 <p class="mbr-hero__subtext">
-                                    <b>7/11</b><br>
-                                    Mobirise is a free bootstrap template with a clean, modern
-                                    style - mobile optimized, and fully responsive.&nbsp; Suitable for every type of
-                                    small business, portfolio, one-page sites. Great as a starting point for your custom
-                                    projects. <br><br></p>
+                                    <b>&gt; </b>{{intro.content}}<br><br></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <h1 class="mbr-hero__text text-white">News</h1><br><br><br>
+                            <div class="mbr-hero animated fadeInUp" *ngFor="let news of newses">
                                 <p class="mbr-hero__subtext">
-                                    <b>7/16</b><br>
-                                    Mobirise is a free bootstrap template with a clean, modern
-                                    style - mobile optimized, and fully responsive.&nbsp; Suitable for every type of
-                                    small business, portfolio, one-page sites. Great as a starting point for your custom
-                                    projects. <br><br></p>
+                                    <b>{{news.date}}</b><br>
+                                    {{news.content}}<br><br></p>
                             </div>
                         </div>
                     </div>
