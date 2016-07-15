@@ -7,6 +7,15 @@
     }
 }
 
+#news {
+    padding-top: 150px;
+    background-image: url(../bettercode_resources/3.jpg);
+}
+
+#contact {
+    background-image: url(../bettercode_resources/z/Page_03.png);
+}
+
 .blink {
     -webkit-animation-name: blink;
     -webkit-animation-iteration-count: infinite;
