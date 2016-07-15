@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: "contact",
-    templateUrl: "app/module/contact.html"
+    templateUrl: "app/module/section/contact/contact.html"
 })
 export class ContactComponent {
 }

@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: "team",
-    templateUrl: "app/module/team.html"
+    templateUrl: "app/module/section/news/team/team.html"
 })
 export class TeamComponent {
 
@@ -19,6 +19,7 @@ export class TeamComponent {
             "explanation": " (前)Global Marketing Office at Samsung Electronics MBA from 光华管理学院 at Peking University Member of Korean Angel Investor Association"
         }
     ];
+
     public advisories = [
         {
             "name": "Roger Chen",
@@ -37,4 +38,5 @@ export class TeamComponent {
             "explanation": " Head of Com2Us China"
         }
     ];
+
 }

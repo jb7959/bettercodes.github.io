@@ -14,9 +14,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var app_component_header_1 = require('./module/commons/app.component.header');
 var app_component_footer_1 = require('./module/commons/app.component.footer');
-var app_component_news_1 = require('./module/app.component.news');
-var app_component_partner_1 = require('./module/app.component.partner');
-var app_component_contact_1 = require('./module/app.component.contact');
+var app_component_news_1 = require('./module/section/news/app.component.news');
+var app_component_partner_1 = require('./module/section/partner/app.component.partner');
+var app_component_contact_1 = require('./module/section/contact/app.component.contact');
 var AppComponent = (function () {
     function AppComponent() {
     }

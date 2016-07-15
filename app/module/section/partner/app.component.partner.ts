@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: "partner",
-    templateUrl: "app/module/partner.html"
+    templateUrl: "app/module/section/partner/partner.html"
 })
 export class PartnerComponent {
 

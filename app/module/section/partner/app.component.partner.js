@@ -12,37 +12,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by donghoon on 2016. 7. 11..
  */
 var core_1 = require('@angular/core');
-var app_component_team_1 = require('./app.component.team');
-var NewsComponent = (function () {
-    function NewsComponent() {
-        this.introduces = [
+var PartnerComponent = (function () {
+    function PartnerComponent() {
+        this.partners = [
             {
-                "content": "中韩跨境环境下的IT咨询、系统设计、开发",
+                "img": "bettercode_resources/7-1.png"
             },
             {
-                "content": "为中韩联合创业留学生们提供孵化环境、天使投资"
-            }
-        ];
-        this.newses = [
-            {
-                "date": "06/20",
-                "content": "Tony Ahn delivers a lecture on iOS programming at Fast Track Campus until the end of month."
+                "img": "bettercode_resources/7-2.png"
             },
             {
-                "date": "06/14",
-                "content": "bettercode signed an MOU with China Weihai Beiyang Incubation Center."
+                "img": "bettercode_resources/7-3.png"
+            },
+            {
+                "img": "bettercode_resources/7-4.png"
+            },
+            {
+                "img": "bettercode_resources/7-5.png"
+            },
+            {
+                "img": "bettercode_resources/7-6.png"
+            },
+            {
+                "img": "bettercode_resources/7-7.png"
             }
         ];
     }
-    NewsComponent = __decorate([
+    PartnerComponent = __decorate([
         core_1.Component({
-            selector: "news",
-            directives: [app_component_team_1.TeamComponent],
-            templateUrl: "app/module/news.html"
+            selector: "partner",
+            templateUrl: "app/module/section/partner/partner.html"
         }), 
         __metadata('design:paramtypes', [])
-    ], NewsComponent);
-    return NewsComponent;
+    ], PartnerComponent);
+    return PartnerComponent;
 }());
-exports.NewsComponent = NewsComponent;
-//# sourceMappingURL=app.component.news.js.map
+exports.PartnerComponent = PartnerComponent;
+//# sourceMappingURL=app.component.partner.js.map
