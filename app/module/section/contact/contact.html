@@ -18,8 +18,23 @@
                     <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25907805.960513376!2d126.98955!3d37.5651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28b61c565cd%3A0x858aedb4e4ea83eb!2z64yA7ZWc66-86rWtIOyEnOyauO2KueuzhOyLnA!5e0!3m2!1sko!2sus!4v1468468888385"-->
                     <!--width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
                     <!--<img [src]="map_img.src" alt="한중지도" id="bettercode_map"/>-->
-                    <sebm-google-map [latitude]="lat" [longitude]="lng">
-                        <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+
+                    <sebm-google-map [latitude]="lat"
+                                     [longitude]="lng"
+                                     [zoom]="zoom"
+                                     [disableDefaultUI]="false"
+                                     [zoomControl]="false"
+                                     (mapClick)="mapClicked($event)">
+
+                        <sebm-google-map-marker *ngFor="let m of markers; let i = index"
+                                                (markerClick)="clickedMarker(m.label, i)"
+                                                [latitude]="m.lat"
+                                                [longitude]="m.lng"
+                                                [label]="m.label"
+                                                [markerDraggable]="m.draggable"
+                                                (dragEnd)="markerDragEnd(m, $event)">
+                        </sebm-google-map-marker>
+
                     </sebm-google-map>
                 </div>
 
