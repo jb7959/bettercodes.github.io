@@ -23,12 +23,6 @@
     background: white;
 }
 
-#bettercode_map {
-    padding-top: 30px;
-    width: 500px;
-    height: 580px;
-}
-
 #news {
     padding-top: 150px;
     background-image: url(../bettercode_resources/3.jpg);
@@ -43,10 +37,6 @@
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
     -webkit-animation-duration: 1s;
-}
-
-.partners {
-    padding-top: 20px;
 }
 
 @media screen and (max-width: 1025px) and (min-width: 766px) {

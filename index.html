@@ -68,10 +68,10 @@
 
 <my-app></my-app>
 
-<!--0. mobirise -->
+<!--mobirise -->
 <script src="assets/jquery/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
 <script src="assets/smooth-scroll/SmoothScroll.js"></script>
 <script src="assets/jarallax/jarallax.js"></script>
 <script src="assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
@@ -80,6 +80,10 @@
 <script src="assets/social-likes/social-likes.js"></script>
 <script src="assets/mobirise/js/script.js"></script>
 <script src="assets/mobirise-gallery/script.js"></script>
+
+<script>
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
 
 <!-- 1. Load libraries -->
 <!-- Polyfill(s) for older browsers -->
@@ -91,6 +95,7 @@
 <!-- 2. Configure SystemJS -->
 <script src="systemjs.config.js"></script>
 <script>
+    System.import('app/main');
     System.import('app').catch(function (err) {
         console.error(err);
     });

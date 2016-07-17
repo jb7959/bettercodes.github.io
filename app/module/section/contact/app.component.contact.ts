@@ -26,14 +26,15 @@ export class ContactComponent {
     };
 
     // google maps zoom level
-    zoom:number = 5;
+    zoom:number = 4;
 
     // initial center position for the map
     lat:number = 32.077261;
     lng:number = 123.636225;
 
     clickedMarker(label:string, index:number) {
-        console.log(`clicked the marker: ${label || index}`)
+        console.log(`clicked the marker: ${label || index}`);
+        alert(`${label || index}`);
     }
 
     mapClicked($event:MouseEvent) {

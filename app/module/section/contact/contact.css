@@ -1,3 +1,9 @@
+#bettercode_map {
+    padding-top: 30px;
+    width: 500px;
+    height: 580px;
+}
+
 .sebm-google-map-container {
     width: 580px;
     height: 540px;
@@ -6,6 +12,19 @@
 .contact_left_map {
     padding: 0px 0px 27px 16px;
     margin: 0;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 766px) {
+
+    .mbr-hero__text {
+        padding-top: 70px;
+    }
+
+    #bettercode_map {
+        width: 450px;
+        height: 510px;
+    }
+
 }
 
 @media screen and (max-width: 765px) and (min-width: 0px) {
