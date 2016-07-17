@@ -8,4 +8,8 @@ import {Component} from '@angular/core';
     templateUrl: "app/module/section/contact/contact.html"
 })
 export class ContactComponent {
+
+    private map_img = {
+        "src": "bettercode_resources/korea_china_map.png"
+    }
 }

@@ -18,6 +18,17 @@ body {
     }
 }
 
+#bettercode_cursor {
+    width: 100px;
+    background: white;
+}
+
+#bettercode_map {
+    padding-top: 30px;
+    width: 500px;
+    height: 580px;
+}
+
 #news {
     padding-top: 150px;
     background-image: url(../bettercode_resources/3.jpg);
@@ -44,6 +55,11 @@ body {
         padding-top: 70px;
     }
 
+    #bettercode_map {
+        width: 390px;
+        height: 430px;
+    }
+
 }
 
 @media screen and (max-width: 765px) and (min-width: 0px) {
@@ -57,8 +73,9 @@ body {
         padding-top: 70px;
     }
 
-    .bettercode_team {
-        padding-top: 50px;
+    #bettercode_map {
+        width: 340px;
+        height: 415px;
     }
 
 }

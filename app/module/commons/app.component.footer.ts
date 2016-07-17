@@ -8,4 +8,6 @@ import {Component} from '@angular/core';
     templateUrl: "app/module/commons/footer.html"
 })
 export class FooterComponent {
+
+    private copy_right = "© 2016 bettercode Co., Ltd. All Rights Reserved.";
 }

@@ -1,31 +1,19 @@
-<section class="bettercode_team content-2 col-sm-12 col-xs-12" id="team">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-xs-12" style="opacity: 0.7; background-color: rgb(0, 0, 0);">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3 class="text-white">Management Team</h3>
-                        <div *ngFor="let member of managements">
-                            <p style="color: white" [innerHTML]="member.name"></p>
-                            <p style="color: white" [innerHTML]="member.explanation"></p><br/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section id="team">
+    <div class="row">
+        <h1 class="mbr-hero__text text-white">Management Team</h1>
+        <br/><br/><br/>
+        <div *ngFor="let member of managements">
+            <p class="mbr-hero__subtext text-white" [innerHTML]="member.name"></p>
+            <p class="mbr-hero__subtext text-white" [innerHTML]="member.explanation"></p><br/>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-xs-12" style="opacity: 0.7; background-color: rgb(0, 0, 0);">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3 class="text-white">Advisory Team</h3>
-                        <div>
-                            <div *ngFor="let member of advisories">
-                                <p style="color: white" [innerHTML]="member.name"></p>
-                                <p style="color: white" [innerHTML]="member.explanation"></p><br/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <div class="row">
+        <h1 class="mbr-hero__text text-white">Advisory Team</h1>
+        <br/><br/><br/>
+        <div>
+            <div *ngFor="let member of advisories">
+                <p class="mbr-hero__subtext text-white" [innerHTML]="member.name"></p>
+                <p class="mbr-hero__subtext text-white" [innerHTML]="member.explanation"></p><br/>
             </div>
         </div>
     </div>

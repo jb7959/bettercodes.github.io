@@ -11,6 +11,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('@angular/core');
 var ContactComponent = (function () {
     function ContactComponent() {
+        this.map_img = {
+            "src": "bettercode_resources/korea_china_map.png"
+        };
     }
     ContactComponent = __decorate([
         core_1.Component({
