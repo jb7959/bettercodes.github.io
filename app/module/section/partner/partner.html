@@ -4,7 +4,8 @@
             <h1 class="mbr-hero__text" style="padding-top: 15px;">Partner</h1><br/>
             <div class="row">
                 <div class="col-sm-3" *ngFor="let partner of partners">
-                    <a href="#partner" data-toggle="tooltip" title="hi"><img class="bettercode_partners" [src]="partner.img"/></a>
+                    <a href="#partner" (click)="imgDetail(partner.content)">
+                        <img class="bettercode_partners" [src]="partner.img"/></a>
                 </div>
             </div>
         </div>

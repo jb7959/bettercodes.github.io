@@ -5,6 +5,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 /**
  * Created by donghoon on 2016. 7. 11..
  */
@@ -25,42 +28,50 @@ var ContactComponent = (function () {
                 lat: 37.482083,
                 lng: 126.884745,
                 label: '서울',
-                draggable: true
+                draggable: true,
+                detail: '서울시 금천구 디지털로9길 99 (가산동, 스타밸리) 천재교육 에듀테크 센터 99, Digital-ro 9-gil, Geumcheon-gu, Seoul, 08510, Rep. of KOREA'
             },
             {
                 lat: 22.537977,
                 lng: 114.062111,
                 label: '선전',
-                draggable: false
+                draggable: false,
+                detail: '中国广东省深圳市龙岗区梅坂大道雅南路1号 １Yanan Road, Meiban Avenue, Longgang, Shenzhen, Guangdong, China'
             },
             {
                 lat: 31.244007,
                 lng: 121.468485,
                 label: '상하이',
-                draggable: true
+                draggable: true,
+                detail: '中国上海市黄浦区方斜路525弄 525 Fangxie Road, Huangpu, Shanghai, China'
             },
             {
                 lat: 39.905624,
                 lng: 116.404319,
                 label: '베이징',
-                draggable: true
+                draggable: true,
+                detail: '中国北京市朝阳区酒仙桥路10号 10 Jiuxianqiao Road, Chaoyang, Beijing, China'
             },
             {
                 lat: 37.515790,
                 lng: 122.114409,
                 label: '위해',
-                draggable: true
+                draggable: true,
+                detail: '高新技术开发区火炬路169-1 169-1 Huo Ju Road, Weihai, Shandong, China'
             }
         ];
     }
-    ContactComponent.prototype.clickedMarker = function (label, index) {
+    ContactComponent.prototype.clickedMarker = function (label, detail, index) {
         console.log("clicked the marker: " + (label || index));
-        alert("" + (label || index));
+        alert("" + (detail || index));
     };
     ContactComponent.prototype.mapClicked = function ($event) {
         this.markers.push({
             lat: $event.coords.lat,
-            lng: $event.coords.lng
+            lng: $event.coords.lng,
+            label: '',
+            draggable: true,
+            detail: ''
         });
     };
     ContactComponent.prototype.markerDragEnd = function (m, $event) {
@@ -72,7 +83,8 @@ var ContactComponent = (function () {
             directives: [core_2.GOOGLE_MAPS_DIRECTIVES],
             styleUrls: ["app/module/section/contact/contact.css"],
             templateUrl: "app/module/section/contact/contact.html"
-        })
+        }), 
+        __metadata('design:paramtypes', [])
     ], ContactComponent);
     return ContactComponent;
 }());
