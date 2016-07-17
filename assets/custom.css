@@ -5,9 +5,9 @@
     src: url(../bettercode_resources/font/cour.ttf) format('truetype');
 }
 
-body {
-    font-family: "Courier New";
-}
+/*body {*/
+/*font-family: "Courier New";*/
+/*}*/
 
 @-webkit-keyframes blink {
     from {

@@ -38,6 +38,7 @@ var PartnerComponent = (function () {
     PartnerComponent = __decorate([
         core_1.Component({
             selector: "partner",
+            styleUrls: ["app/module/section/partner/partner.css"],
             templateUrl: "app/module/section/partner/partner.html"
         })
     ], PartnerComponent);

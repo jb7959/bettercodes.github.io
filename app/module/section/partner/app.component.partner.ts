@@ -5,6 +5,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: "partner",
+    styleUrls: ["app/module/section/partner/partner.css"],
     templateUrl: "app/module/section/partner/partner.html"
 })
 export class PartnerComponent {
