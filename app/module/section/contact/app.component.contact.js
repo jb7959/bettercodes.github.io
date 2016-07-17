@@ -12,15 +12,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by donghoon on 2016. 7. 11..
  */
 var core_1 = require('@angular/core');
+var core_2 = require('angular2-google-maps/core');
 var ContactComponent = (function () {
     function ContactComponent() {
         this.map_img = {
             "src": "bettercode_resources/korea_china_map.png"
         };
+        this.lat = 37.335887;
+        this.lng = 126.584063;
     }
     ContactComponent = __decorate([
         core_1.Component({
             selector: "contact",
+            directives: [core_2.GOOGLE_MAPS_DIRECTIVES],
+            styleUrls: ["app/module/section/contact/contact.css"],
             templateUrl: "app/module/section/contact/contact.html"
         }), 
         __metadata('design:paramtypes', [])
