@@ -29,8 +29,8 @@ export class ContactComponent {
     zoom:number = 4;
 
     // initial center position for the map
-    lat:number = 32.077261;
-    lng:number = 123.636225;
+    lat:number = 34.077261;
+    lng:number = 121.636225;
 
     clickedMarker(label:string, index:number) {
         console.log(`clicked the marker: ${label || index}`);

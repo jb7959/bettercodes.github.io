@@ -18,8 +18,8 @@ var ContactComponent = (function () {
         // google maps zoom level
         this.zoom = 4;
         // initial center position for the map
-        this.lat = 32.077261;
-        this.lng = 123.636225;
+        this.lat = 34.077261;
+        this.lng = 121.636225;
         this.markers = [
             {
                 lat: 37.482083,
