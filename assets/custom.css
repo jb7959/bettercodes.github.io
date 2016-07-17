@@ -1,3 +1,14 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: 'Courier New';
+    src: url(../bettercode_resources/font/cour.ttf) format('truetype');
+}
+
+body {
+    font-family: "Courier New";
+}
+
 @-webkit-keyframes blink {
     from {
         opacity: 1.0;
