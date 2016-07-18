@@ -19,7 +19,7 @@ var ContactComponent = (function () {
             "src": "bettercode_resources/korea_china_map.png"
         };
         // google maps zoom level
-        this.zoom = 5;
+        this.zoom = 4;
         // initial center position for the map
         this.lat = 31.877261;
         this.lng = 122.036225;

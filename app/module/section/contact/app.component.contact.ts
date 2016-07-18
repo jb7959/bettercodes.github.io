@@ -26,7 +26,7 @@ export class ContactComponent {
     };
 
     // google maps zoom level
-    zoom:number = 5;
+    zoom:number = 4;
 
     // initial center position for the map
     lat:number = 31.877261;
