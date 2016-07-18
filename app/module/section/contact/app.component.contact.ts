@@ -29,7 +29,7 @@ export class ContactComponent {
     zoom:number = 4;
 
     // initial center position for the map
-    lat:number = 32.77261;
+    lat:number = 33.77261;
     lng:number = 122.036225;
 
     clickedMarker(label:string, detail:string, index:number) {

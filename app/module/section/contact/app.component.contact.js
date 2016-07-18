@@ -21,7 +21,7 @@ var ContactComponent = (function () {
         // google maps zoom level
         this.zoom = 4;
         // initial center position for the map
-        this.lat = 32.77261;
+        this.lat = 33.77261;
         this.lng = 122.036225;
         this.markers = [
             {
