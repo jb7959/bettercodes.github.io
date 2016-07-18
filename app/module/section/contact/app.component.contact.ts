@@ -26,11 +26,11 @@ export class ContactComponent {
     };
 
     // google maps zoom level
-    zoom:number = 4;
+    zoom:number = 5;
 
     // initial center position for the map
-    lat:number = 34.077261;
-    lng:number = 121.636225;
+    lat:number = 31.877261;
+    lng:number = 122.036225;
 
     clickedMarker(label:string, detail:string, index:number) {
         console.log(`clicked the marker: ${label || index}`);
@@ -42,7 +42,7 @@ export class ContactComponent {
             lat: $event.coords.lat,
             lng: $event.coords.lng,
             label: '',
-            draggable: true,
+            draggable: false,
             detail: ''
         });
     }
@@ -56,7 +56,7 @@ export class ContactComponent {
             lat: 37.482083,
             lng: 126.884745,
             label: '서울',
-            draggable: true,
+            draggable: false,
             detail: '서울시 금천구 디지털로9길 99 (가산동, 스타밸리) 천재교육 에듀테크 센터 99, Digital-ro 9-gil, Geumcheon-gu, Seoul, 08510, Rep. of KOREA'
         },
         {
@@ -70,21 +70,21 @@ export class ContactComponent {
             lat: 31.244007,
             lng: 121.468485,
             label: '상하이',
-            draggable: true,
+            draggable: false,
             detail: '中国上海市黄浦区方斜路525弄 525 Fangxie Road, Huangpu, Shanghai, China'
         },
         {
             lat: 39.905624,
             lng: 116.404319,
             label: '베이징',
-            draggable: true,
+            draggable: false,
             detail: '中国北京市朝阳区酒仙桥路10号 10 Jiuxianqiao Road, Chaoyang, Beijing, China'
         },
         {
             lat: 37.515790,
             lng: 122.114409,
             label: '위해',
-            draggable: true,
+            draggable: false,
             detail: '高新技术开发区火炬路169-1 169-1 Huo Ju Road, Weihai, Shandong, China'
         }
     ];
