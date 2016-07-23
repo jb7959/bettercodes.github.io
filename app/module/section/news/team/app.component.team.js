@@ -46,6 +46,7 @@ var TeamComponent = (function () {
     TeamComponent = __decorate([
         core_1.Component({
             selector: "team",
+            styleUrls: ["app/module/section/news/team/team.css"],
             templateUrl: "app/module/section/news/team/team.html"
         }), 
         __metadata('design:paramtypes', [])

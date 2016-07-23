@@ -7,6 +7,7 @@ import {TeamComponent} from './team/app.component.team'
 @Component({
     selector: "news",
     directives: [TeamComponent],
+    styleUrls: ["app/module/section/news/news.css"],
     templateUrl: "app/module/section/news/news.html"
 })
 export class NewsComponent {

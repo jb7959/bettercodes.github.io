@@ -5,6 +5,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: "team",
+    styleUrls: ["app/module/section/news/team/team.css"],
     templateUrl: "app/module/section/news/team/team.html"
 })
 export class TeamComponent {

@@ -38,6 +38,7 @@ var NewsComponent = (function () {
         core_1.Component({
             selector: "news",
             directives: [app_component_team_1.TeamComponent],
+            styleUrls: ["app/module/section/news/news.css"],
             templateUrl: "app/module/section/news/news.html"
         }), 
         __metadata('design:paramtypes', [])
