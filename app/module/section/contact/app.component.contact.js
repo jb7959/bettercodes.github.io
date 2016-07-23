@@ -74,6 +74,11 @@ var ContactComponent = (function () {
             document.getElementById("weihai_map").style.display = "none";
             document.getElementById("sanghai_map").style.display = "none";
             document.getElementById("shunzhen_map").style.display = "none";
+            document.getElementById("seoul_text").style.display = "block";
+            document.getElementById("beijing_text").style.display = "none";
+            document.getElementById("weihai_text").style.display = "none";
+            document.getElementById("sanghai_text").style.display = "none";
+            document.getElementById("shunzhen_text").style.display = "none";
         }
         else if (index === 1) {
             document.getElementById("seoul_map").style.display = "none";
@@ -81,6 +86,11 @@ var ContactComponent = (function () {
             document.getElementById("weihai_map").style.display = "none";
             document.getElementById("sanghai_map").style.display = "none";
             document.getElementById("shunzhen_map").style.display = "block";
+            document.getElementById("seoul_text").style.display = "none";
+            document.getElementById("beijing_text").style.display = "none";
+            document.getElementById("weihai_text").style.display = "none";
+            document.getElementById("sanghai_text").style.display = "none";
+            document.getElementById("shunzhen_text").style.display = "block";
         }
         else if (index === 2) {
             document.getElementById("seoul_map").style.display = "none";
@@ -88,20 +98,35 @@ var ContactComponent = (function () {
             document.getElementById("weihai_map").style.display = "none";
             document.getElementById("sanghai_map").style.display = "block";
             document.getElementById("shunzhen_map").style.display = "none";
+            document.getElementById("seoul_text").style.display = "none";
+            document.getElementById("beijing_text").style.display = "none";
+            document.getElementById("weihai_text").style.display = "none";
+            document.getElementById("sanghai_text").style.display = "block";
+            document.getElementById("shunzhen_text").style.display = "none";
         }
         else if (index === 3) {
-            document.getElementById("seoul_map").style.display = "none";
-            document.getElementById("beijing_map").style.display = "none";
-            document.getElementById("weihai_map").style.display = "block";
-            document.getElementById("sanghai_map").style.display = "none";
-            document.getElementById("shunzhen_map").style.display = "none";
-        }
-        else if (index === 4) {
             document.getElementById("seoul_map").style.display = "none";
             document.getElementById("beijing_map").style.display = "block";
             document.getElementById("weihai_map").style.display = "none";
             document.getElementById("sanghai_map").style.display = "none";
             document.getElementById("shunzhen_map").style.display = "none";
+            document.getElementById("seoul_text").style.display = "none";
+            document.getElementById("beijing_text").style.display = "block";
+            document.getElementById("weihai_text").style.display = "none";
+            document.getElementById("sanghai_text").style.display = "none";
+            document.getElementById("shunzhen_text").style.display = "none";
+        }
+        else if (index === 4) {
+            document.getElementById("seoul_map").style.display = "none";
+            document.getElementById("beijing_map").style.display = "none";
+            document.getElementById("weihai_map").style.display = "block";
+            document.getElementById("sanghai_map").style.display = "none";
+            document.getElementById("shunzhen_map").style.display = "none";
+            document.getElementById("seoul_text").style.display = "none";
+            document.getElementById("beijing_text").style.display = "none";
+            document.getElementById("weihai_text").style.display = "block";
+            document.getElementById("sanghai_text").style.display = "none";
+            document.getElementById("shunzhen_text").style.display = "none";
         }
     };
     ContactComponent.prototype.mapClicked = function ($event) {
