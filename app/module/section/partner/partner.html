@@ -3,21 +3,28 @@
         <div class="col-sm-8 col-xs-12">
             <h1 class="mbr-hero__text" style="padding-top: 15px;">Partner</h1><br/>
             <div class="row">
-                <div class="col-sm-3" *ngFor="let partner of partners">
-                    <a href="#partner" (click)="imgDetail(partner.content)">
+                <div class="col-sm-3" *ngFor="let partner of partners; let i = index;">
+                    <a href="#partner" (click)="imgDetail(partner.content, i)">
                         <img class="bettercode_partners" [src]="partner.img"/></a>
                 </div>
             </div>
         </div>
         <div class="col-sm-4" style="padding-left: 50px;">
             <div class="caption">
-                <div>
-                    <h1>
-                        北京衣念科技发展有限公司
-                    </h1>
-                    <h3>E-Land Systems China</h3>
+                <div id="bettercode_partner-default"
+                     style="display: block">
+                    <h1>北京衣念科技发展有限公司</h1>
+                    <h1>E-Land Systems China</h1>
                     <p>
                         <b>是由韩国衣恋集团投资注册，坐落于北京朝阳区恒通商务园内，是一家集软件应用程序开发、自主产品研发为一体的软件研发公司，国家级高新技术企业。公司主要致力于提供ERP等商务解决方案，引领顾客进行改革，以推动社会的发展和进步。</b>
+                    </p><br/>
+                </div>
+                <div *ngFor="let partner of partners; let i = index;" id="bettercode_partner-{{i}}"
+                     style="display: none">
+                    <h1>{{partner.china_title}}</h1>
+                    <h3>{{partner.eng_title}}</h3>
+                    <p>
+                        <b>{{partner.content}}</b>
                     </p><br/>
                 </div>
             </div>
