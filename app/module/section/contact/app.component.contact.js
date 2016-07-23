@@ -5,9 +5,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 /**
  * Created by donghoon on 2016. 7. 11..
  */
@@ -17,6 +14,12 @@ var ContactComponent = (function () {
     function ContactComponent() {
         this.map_img = {
             "src": "bettercode_resources/korea_china_map.png"
+        };
+        this.map = {
+            "beijing": "bettercode_resources/Map_Beijing.png",
+            "weihai": "bettercode_resources/Map_Weihai.png",
+            "sanghai": "bettercode_resources/Map_Shanghai.png",
+            "shunzhen": "bettercode_resources/Map_Shenzhen.png"
         };
         // google maps zoom level
         this.zoom = 4;
@@ -63,7 +66,43 @@ var ContactComponent = (function () {
     }
     ContactComponent.prototype.clickedMarker = function (label, detail, index) {
         console.log("clicked the marker: " + (label || index));
-        alert("" + (detail || index));
+        console.log("clicked the marker: " + index);
+        // alert(`${detail || index}`);
+        if (index === 0) {
+            document.getElementById("seoul_map").style.display = "block";
+            document.getElementById("beijing_map").style.display = "none";
+            document.getElementById("weihai_map").style.display = "none";
+            document.getElementById("sanghai_map").style.display = "none";
+            document.getElementById("shunzhen_map").style.display = "none";
+        }
+        else if (index === 1) {
+            document.getElementById("seoul_map").style.display = "none";
+            document.getElementById("beijing_map").style.display = "none";
+            document.getElementById("weihai_map").style.display = "none";
+            document.getElementById("sanghai_map").style.display = "none";
+            document.getElementById("shunzhen_map").style.display = "block";
+        }
+        else if (index === 2) {
+            document.getElementById("seoul_map").style.display = "none";
+            document.getElementById("beijing_map").style.display = "none";
+            document.getElementById("weihai_map").style.display = "none";
+            document.getElementById("sanghai_map").style.display = "block";
+            document.getElementById("shunzhen_map").style.display = "none";
+        }
+        else if (index === 3) {
+            document.getElementById("seoul_map").style.display = "none";
+            document.getElementById("beijing_map").style.display = "none";
+            document.getElementById("weihai_map").style.display = "block";
+            document.getElementById("sanghai_map").style.display = "none";
+            document.getElementById("shunzhen_map").style.display = "none";
+        }
+        else if (index === 4) {
+            document.getElementById("seoul_map").style.display = "none";
+            document.getElementById("beijing_map").style.display = "block";
+            document.getElementById("weihai_map").style.display = "none";
+            document.getElementById("sanghai_map").style.display = "none";
+            document.getElementById("shunzhen_map").style.display = "none";
+        }
     };
     ContactComponent.prototype.mapClicked = function ($event) {
         this.markers.push({
@@ -83,8 +122,7 @@ var ContactComponent = (function () {
             directives: [core_2.GOOGLE_MAPS_DIRECTIVES],
             styleUrls: ["app/module/section/contact/contact.css"],
             templateUrl: "app/module/section/contact/contact.html"
-        }), 
-        __metadata('design:paramtypes', [])
+        })
     ], ContactComponent);
     return ContactComponent;
 }());

@@ -56,13 +56,38 @@
 
                     <table cellpadding="0" cellspacing="0" width="322">
                         <tr>
-                            <td style="border:1px solid #cecece;"><a
-                                    href="http://map.naver.com/?menu=location&mapMode=0&lat=37.4816177&lng=126.8848631&dlevel=11&__fromRestorer=true&__pinOnly=false&query=&searchCoord=&mpx=37.4816177%2C126.8848631%3AZ11%3A0.0344419%2C0.0153240&tab=1&pinId=18976994&pinType=site&enc=b64"
-                                    target="_blank"><img
-                                    src="http://prt.map.naver.com/mashupmap/print?key=p1468214512374_-598855602"
-                                    width="322"
-                                    height="259" alt="지도 크게 보기" title="지도 크게 보기" border="0"
-                                    style="vertical-align:top;"/></a></td>
+                            <td style="border:1px solid #cecece;">
+                                <a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.4816177&lng=126.8848631&dlevel=11&__fromRestorer=true&__pinOnly=false&query=&searchCoord=&mpx=37.4816177%2C126.8848631%3AZ11%3A0.0344419%2C0.0153240&tab=1&pinId=18976994&pinType=site&enc=b64"
+                                   target="_blank" style="display: block" id="seoul_map">
+                                    <img src="http://prt.map.naver.com/mashupmap/print?key=p1468214512374_-598855602"
+                                         width="322" height="259" alt="지도 크게 보기" title="지도 크게 보기" border="0"
+                                         style="vertical-align:top;"/>
+                                </a>
+                                <a href="http://map.baidu.com/?shareurl=1&poiShareUid=642d5409afef53c009a8d4f5"
+                                   target="_blank" style="display: none" id="beijing_map">
+                                    <img [src]="map.beijing"
+                                         width="322" height="259" alt="지도 크게 보기" title="지도 크게 보기" border="0"
+                                         style="vertical-align:top;"/>
+                                </a>
+                                <a href="http://map.baidu.com/?shareurl=1&poiShareUid=f5c77f8410a70c984afd3faf"
+                                   target="_blank" style="display: none" id="weihai_map">
+                                    <img [src]="map.weihai"
+                                         width="322" height="259" alt="지도 크게 보기" title="지도 크게 보기" border="0"
+                                         style="vertical-align:top;"/>
+                                </a>
+                                <a href="http://map.baidu.com/?shareurl=1&poiShareUid=de3331f418ec98dc1b94c6c9"
+                                   target="_blank" style="display: none" id="sanghai_map">
+                                    <img [src]="map.sanghai"
+                                         width="322" height="259" alt="지도 크게 보기" title="지도 크게 보기" border="0"
+                                         style="vertical-align:top;"/>
+                                </a>
+                                <a href="http://map.baidu.com/?shareurl=1&poiShareUid=2c020f4bb023ec3317b54bf2"
+                                   target="_blank" style="display: none" id="shunzhen_map">
+                                    <img [src]="map.shunzhen"
+                                         width="322" height="259" alt="지도 크게 보기" title="지도 크게 보기" border="0"
+                                         style="vertical-align:top;"/>
+                                </a>
+                            </td>
                         </tr>
                         <!--<tr>-->
                         <!--<td>-->
