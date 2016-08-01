@@ -131,5 +131,7 @@ export class PartnerComponent {
 interface partner {
     name:string,
     img:string,
+    china_title:string,
+    eng_title:string,
     content:string
 }
